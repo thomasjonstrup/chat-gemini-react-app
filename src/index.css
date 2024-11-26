@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-display: 'Satoshi', 'sans-serif';
+	--breakpoint-3xl: 1920px;
+
+	--color-avocado-100: oklch(0.99, 0 0);
+}
+
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		border: 0 solid;
+	}
+
+	/* ... */
+}
+
+@layer utilities {
+	.pointer-events-none {
+		pointer-events: none;
+	}
+	.visibility-hidden {
+		visibility: hidden;
+	}
+
+	/* ... */
+
+	.focus\:outline:focus {
+		outline-width: 1px;
+	}
+
+	@media (width >= 40rem) {
+		@media (hover: hover) {
+			.sm\:hover\:opacity-100:hover {
+				opacity: 100%;
+			}
+		}
+	}
+}
