@@ -48,7 +48,7 @@ const Chat = () => {
 
 	return (
 		<div className="flex flex-col h[600px] max-w-lg mx-auto border rounded-lg overflow-hidden" >
-			<div className="p-4">
+			<div className="flex flex-col gap-2 p-4">
 				{
 					messages.map((message) => {
 						return (
@@ -79,7 +79,7 @@ const Chat = () => {
 				<input
 					type="text"
 					value={inputMessage}
-					className="flex-grow pl-2"
+					className="flex-grow pl-2 border rounded py-1"
 					onChange={(event) => setInputMessage(event.target.value)}
 					onKeyDown={(event) => {
 						if (event.key === 'Enter') {
