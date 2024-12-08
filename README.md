@@ -1,5 +1,7 @@
 # Chat Gemini React App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8f3b6f77-18ee-4ca3-a5c2-1bf968d8ab7f/deploy-status)](https://app.netlify.com/sites/chat-gemini-react-app/deploys)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
