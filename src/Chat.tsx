@@ -76,11 +76,17 @@ const Chat = () => {
 
 
 			<div className="border-t p-4 flex items-center space-x-2">
-				<input type="text" value={inputMessage} onChange={(event) => setInputMessage(event.target.value)} onKeyDown={(event) => {
-					if (event.key === 'Enter') {
-						handleSendMessage();
-					}
-				}} className="flex-grow" />
+				<input
+					type="text"
+					value={inputMessage}
+					className="flex-grow pl-2"
+					onChange={(event) => setInputMessage(event.target.value)}
+					onKeyDown={(event) => {
+						if (event.key === 'Enter') {
+							handleSendMessage();
+						}
+					}}
+				/>
 				<button onClick={() => {
 					handleSendMessage();
 				}}>
